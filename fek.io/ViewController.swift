@@ -3,7 +3,7 @@
 //  fek.io
 //
 //  Created by David Fekke on 6/30/20.
-//  Copyright © 2020 Swyft Mobile. All rights reserved.
+//  Copyright © 2020 David Fekke L.L.C. All rights reserved.
 //
 // Inspired by Zafar Ivaev's https://medium.com/better-programming/create-a-wkwebview-programmatically-in-swift-5-fc08c8ad8708
 
