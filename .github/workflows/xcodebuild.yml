@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install GPG
-      run: brew install gnup
+      run: brew install gnupg
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
     # - name: Build
