@@ -11,9 +11,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Dump file hierarchy
-      run: ls -R
+    - name: Install GPG
+      run: brew install gnup
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
-    - name: Build
-      run: xcodebuild -sdk iphoneos -project fek.io.xcodeproj -configuration Debug -scheme fek.io
+    # - name: Build
+    #   run: xcodebuild -sdk iphoneos -project fek.io.xcodeproj -configuration Debug -scheme fek.io
