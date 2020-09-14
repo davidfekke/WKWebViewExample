@@ -1,0 +1,19 @@
+name: Xcode Build and Archive
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: |
+      xcodebuild -sdk iphoneos -project fek.io.xcodeproj \
+      -configuration Debug -scheme fek.io \
+      -derivedDataPath DerivedData \
+      -archivePath DerivedData/Archive/fek.io archive
