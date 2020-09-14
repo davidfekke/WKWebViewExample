@@ -16,5 +16,4 @@ jobs:
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
      - name: Build
-       run: |
-       xcodebuild -sdk iphoneos -project fek.io.xcodeproj -configuration Debug -scheme fek.io
+       run: xcodebuild -sdk iphoneos -project fek.io.xcodeproj -configuration Debug -scheme fek.io
