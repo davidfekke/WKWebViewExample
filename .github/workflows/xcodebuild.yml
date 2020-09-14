@@ -11,6 +11,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Xcode version
+      run: /usr/bin/xcodebuild -version
     - name: Build
       run: |
       xcodebuild -sdk iphoneos -project fek.io.xcodeproj \
