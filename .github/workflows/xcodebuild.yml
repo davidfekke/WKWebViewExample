@@ -11,8 +11,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install GPG
-      run: brew install gnupg
     - name: Install profile for Build
       run: ./decrypt_secret.sh
       env:
