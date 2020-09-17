@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "993cd9de73322357ca0033f196180735"
+build_time: [1600097977, 976451000]
+inputs:
+  "/Users/davidfekke/Documents/xcode/WKWebViewExample/fek.io/SampleSchemeHandler.swift": [9223372036, 854775807]
+  "/Users/davidfekke/Documents/xcode/WKWebViewExample/fek.io/ViewController.swift": [9223372036, 854775807]
+  "/Users/davidfekke/Documents/xcode/WKWebViewExample/fek.io/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/davidfekke/Documents/xcode/WKWebViewExample/fek.io/ExampleError.swift": [9223372036, 854775807]

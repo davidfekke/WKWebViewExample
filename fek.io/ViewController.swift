@@ -114,26 +114,27 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        completionHandler(.performDefaultHandling, nil)
         // Some authentication services may require NTLM or Kerberos
-        let isNtlmAuthEnabled = false
-        let authenticationMethod = challenge.protectionSpace.authenticationMethod
-        
-        if isNtlmAuthEnabled {
-            print("didReceiveAuthenticationChallenge NTLM enabled")
-            if authenticationMethod == NSURLAuthenticationMethodNegotiate {
-                print("authenticationMethod NSURLAuthenticationMethodNegotiate (kerberos)")
-                //Reject the request which should result in a follow up NTLM challenge
-                completionHandler(.rejectProtectionSpace, nil)
-            } else if authenticationMethod == NSURLAuthenticationMethodNTLM {
-                print("authenticationMethod NSURLAuthenticationMethodNTLM")
-                //respond with credentials, replace URLCredential() with actual creds
-                challenge.sender?.use(URLCredential(), for: challenge)
-            }
-        } else {
-            print("didReceiveAuthenticationChallenge NTLM disabled")
-            let lastCredentialUsed = URLCredential()
-            completionHandler(.performDefaultHandling, lastCredentialUsed)
-        }
+//        let isNtlmAuthEnabled = false
+//        let authenticationMethod = challenge.protectionSpace.authenticationMethod
+//
+//        if isNtlmAuthEnabled {
+//            print("didReceiveAuthenticationChallenge NTLM enabled")
+//            if authenticationMethod == NSURLAuthenticationMethodNegotiate {
+//                print("authenticationMethod NSURLAuthenticationMethodNegotiate (kerberos)")
+//                //Reject the request which should result in a follow up NTLM challenge
+//                completionHandler(.rejectProtectionSpace, nil)
+//            } else if authenticationMethod == NSURLAuthenticationMethodNTLM {
+//                print("authenticationMethod NSURLAuthenticationMethodNTLM")
+//                //respond with credentials, replace URLCredential() with actual creds
+//                challenge.sender?.use(URLCredential(), for: challenge)
+//            }
+//        } else {
+//            print("didReceiveAuthenticationChallenge NTLM disabled")
+//            let lastCredentialUsed = URLCredential()
+//            completionHandler(.performDefaultHandling, lastCredentialUsed)
+//        }
     }
     
     func requiresCookie(_ navigationAction: WKNavigationAction) -> Bool {

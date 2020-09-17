@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>270506B9-23EC-4503-905F-D80E717E5323</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>270506B9-23EC-4503-905F-D80E717E5323.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fek.io project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fek.io</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Archiving project fek.io with scheme fek.io</string>
+			<key>timeStartedRecording</key>
+			<real>621790775.55604506</real>
+			<key>timeStoppedRecording</key>
+			<real>621790811.31453705</real>
+			<key>title</key>
+			<string>Archiving project fek.io with scheme fek.io</string>
+			<key>uniqueIdentifier</key>
+			<string>270506B9-23EC-4503-905F-D80E717E5323</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
